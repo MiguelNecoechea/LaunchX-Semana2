@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamacakes</title>
+    <!--incluir jquery-->
+    <script src="./jquery-1.6.3.min.js"></script>
+</head>
+<body>
+    <header >
+        <div class="header_container">
+            <h1><a href="pasteleria.html">Pasteleria tamacakes</a> 
+            <nav>
+                <ul>
+                    <li><a href="#presentation">Inicio</a></li>
+                    <li><a href="#aboutus">Acerca de nosotros</a> </li>
+                    <li><a href="#historia">Nuestra historia</a></li>
+                    <li><a href="#pasteles">Menu</a></li>
+                    <li><a href="#formulario">Realize su pedido</a></li>
+                    <br>
+                </ul>
+            </nav>      
+        </div>
+        <!--<div class="header-lema">
+            <h2>Servicio a domicilio los 365 dias del año</h2>
+        </div>-->
+    </header>
+<!--Clase donde va el video de presentacion y eso-->
+    <section class="presentation" id="presentation">
+        <br>
+        <div class="dark-overlay">
+            <div class="presentation-content">
+                <h2>El pastel del pueblo de Tamazula</h2><br>
+                <h3>En Pasteleria tamacakes®, ofrecemos productos frescos con altos estándares <br>
+                    de calidad y queremos que los pruebes todos y te enamores de su sabor <br>
+                    por eso, constantemente ofrecemos promociones de temporada para que celebres <br>
+                    con nosotros todos los días.
+                </h3>
+                <br>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section class="aboutus" id="aboutus">
+        <div class="about-container left" id="about-img1">
+            <!--contenedor de la imagen-->
+        </div>
+        <div class="about-container right about-content">
+            <h2 class="about-title">Sobre nosotros</h2>
+            <p>
+                Somos una pasteleria originada en Tamazula de Gordiano con mas de 10 años de experiencia en el sector.
+                Dentro del pueblo somos la primer opcion en cuanto a la compra de pasteles, debido a la calidad que nos respalda
+                Comenzamos como un pequeño proyecto con instalaciones en el propio hogar.
+                A dia de hoy contamos con sucursal en el centro de la ciudad.
+            </p>
+        </div>
+    </section>
+
+    <section class="historia" id="historia">
+        <div class="historia-container right" id="historia-img2">
+            <!--contenedor para una imagen-->
+        </div>
+        <div class="historia-container left historia-content">
+            <h2 class="historia-title">Historia</h2>
+            <p>
+                Fundada a comienzos de la decada del 2010, la pasteleria tiene origen en la casa de los Necoechea.
+                La familia decidio dejar la mecanica para explorar otros rumbos, los comienzos no fueron faciles.
+                Mas sin embargo con el tiempo demostraron ser de los mejores pasteleros de la region.
+            </p>
+        </div>
+    </section>
+    <hr>
+
+    <section class="Pasteles" id="pasteles">
+        <h2 class="pasteles-title">Nuestros Pasteles</h2>
+        <div class="pasteless">
+            <div class="pie">
+                <p>Pastel de Tres leches</p>
+                <p>450 mxn</p>
+            </div>
+        </div>
+
+        <div class="pasteless">
+            <div class="pie">
+                <p>Pastel de chocolate</p>
+                <p>400 mxn</p>
+            </div>
+        </div>
+
+        <div class="pasteless">
+            <div class="pie">
+                <p>Pastel de tres leches (Diabetico)</p>
+                <p>400 mxn</p>
+            </div>
+        </div>
+
+        <div class="pasteless">
+            <div class="pie">
+                <p>Pastel de nieve</p>
+                <p>400 mxn</p>
+            </div>
+        </div>
+        
+        <div class="pasteless">
+            <div class="pie">
+                <p>Pastel de vainilla</p>
+                <p>300 mxn</p>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+
+    <section class="formulario" id="formulario">
+        <form class="form" action="https://formspree.io/f/mdobzzwn"
+        method="POST" >
+            <!-- esto crea el contenerdor del formulario -->
+            <div class="form-container"> 
+                <h2 class="form-title">Reserva tu pastel</h2>
+
+                <label for="input1" >Ingrese su nombre</label>
+                <input type="text" class="form_input" id="input1" placeholder="Nombre" name="name"><br>
+                
+                <label for="input2">Ingresa tu correo electronico</label>
+                <input type="email" id="input2" class="form_input" placeholder="email" name="email"><br>
+
+                <label for="input3">Ingresa el nombre de el pastel</label>
+                <input type="text" id="input3"class="form_input" placeholder="Pastel" name="pastel"><br>
+
+                <label for="input4">Ingresa la decoreacion</label>
+                <input type="text" id="input4" class="form_input" placeholder="Decoraciones" name="decoraciones"><br>
+
+                <label for="input5">Ingresa tu numero de telefono</label>
+                <input type="tel" id="input5" class="form_input" maxlength="10" placeholder="Numero telefonico" name="numero"><br>
+
+                <label for="input6">Ingresa la cantidad de pasteles</label>
+                <input type="number" id="input6" class="form_input" placeholder="cantidad" name="cantidad"><br>
+
+                <label for="input7">Detalles adicioneles</label>
+                <textarea id="input7" class="form_input form_input-message" placeholder="descripcion detallada" name="message"></textarea><br>
+    
+                <input type="submit" value="Enviar" class="form_cta">
+            </div>
+        </form>
+    </section>
+
+    <footer class="pie-pagina">
+        <div class="grupo1">
+                <h2>sigueme</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/miguelangel.necoecheasolorzano" target="blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/necoecheamiguel/" target="blank" class="fa fa-instagram"></a>
+                    <a href="https://github.com/MiguelNecoechea" target="blank" class="fa fa-github"></a>
+                </div>
+            </div>
+        </div>
+        <!-- <P>Pasteleria ficticia hecha como kata para el curso de launchX de innovaccion virtual &copy;. Todos los derechos reservados</P>  -->
+        <div class="grupo2">
+            <small>&copy;2021 <b>tamacakes</b>-Todos los derechos reservados</small>
+        </div>
+    </footer>
+</body>
+</html>
